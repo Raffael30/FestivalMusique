@@ -27,14 +27,16 @@
 				<td th:text="${soliste.prenom}"></td>
 				<td th:text="${soliste.dateNaissance}"></td>
 				<td th:text="${soliste.nationalite}"></td>
-				<td>
-					<a href=""></a>
-				</td>
+				<td><a th:href="'updateSoliste/' + ${soliste.num}"><button
+							type="submit" class="btn btn-primary">Modifier</button></a> <a
+					th:href="'deleteSoliste/' + ${soliste.num}"><button
+							type="submit" class="btn btn-danger">Supprimer</button></a></td>
 			</tr>
 		</tbody>
 	</table>
-	
-	<a th:href="ajoutSoliste"><button type="button" class="btn btn-primary">Ajouter un soliste</button></a>
+
+	<a th:href="ajoutSoliste"><button type="button"
+			class="btn btn-primary">Ajouter un soliste</button></a>
 
 </body>
 </html>

@@ -38,6 +38,12 @@ public class SolisteController {
 		iss.saveSoliste(soliste);
 		return "redirect:getAllSoliste";
 	}
+	
+	@GetMapping("ajoutSoliste")
+	public String ajoutSoliste(Model m) {
+		return "formSoliste";
+	}
+
 
 	@GetMapping("updateSoliste/{num}")
 	public String updateSoliste(@PathVariable("num") Long num, Model m) {
