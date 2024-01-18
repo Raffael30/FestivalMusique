@@ -33,6 +33,8 @@ public class Soliste {
 	
 	@Column(name = "nationality", length = 20)
 	String nationalite;
+	
+	
 
 	public Soliste(long num, String nom, String prenom, LocalDate dateNaissance, String nationalite) {
 		super();
